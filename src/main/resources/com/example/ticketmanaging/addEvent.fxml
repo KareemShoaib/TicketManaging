@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="760.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ticketmanaging.AddEventController">
+    <center>
+        <AnchorPane BorderPane.alignment="CENTER">
+            <children>
+                <Label alignment="TOP_CENTER" layoutX="265.0" layoutY="45.0" prefHeight="32.0" prefWidth="230.0" text="ADD EVENT" textAlignment="CENTER">
+                    <font>
+                        <Font name="System Bold Italic" size="22.0" />
+                    </font>
+                </Label>
+            <Button fx:id="Back" layoutX="453.0" layoutY="423.0" mnemonicParsing="false" onAction="#Back" prefHeight="45.0" prefWidth="227.0" style="-fx-background-color: #000000;" text="Back" textFill="WHITE">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Button>
+            <VBox layoutX="93.0" layoutY="106.0" prefHeight="317.0" prefWidth="249.0">
+               <children>
+                  <Label prefHeight="21.0" prefWidth="252.0" text="Enter category:">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <ComboBox fx:id="categoriesBox" prefHeight="25.0" prefWidth="253.0" promptText="Choose a category">
+                     <VBox.margin>
+                        <Insets bottom="20.0" />
+                     </VBox.margin>
+                  </ComboBox>
+                  <Label prefHeight="21.0" prefWidth="252.0" text="Enter Event name:">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="2.0" />
+                     </VBox.margin>
+                  </Label>
+                  <TextField fx:id="eventName" promptText="Enter event name">
+                     <VBox.margin>
+                        <Insets bottom="20.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <Label prefHeight="21.0" prefWidth="252.0" text="Enter Event date:">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <DatePicker fx:id="eventDate" editable="false" prefHeight="25.0" prefWidth="254.0">
+                     <VBox.margin>
+                        <Insets bottom="20.0" />
+                     </VBox.margin>
+                  </DatePicker>
+                  <Label prefHeight="21.0" prefWidth="252.0" text="Enter Event time:">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <ComboBox fx:id="eventTime" prefHeight="25.0" prefWidth="278.0" promptText="Choose a time">
+                     <VBox.margin>
+                        <Insets bottom="20.0" />
+                     </VBox.margin>
+                  </ComboBox>
+                  <Label prefHeight="21.0" prefWidth="252.0" text="Enter Event location:">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="eventLocation" promptText="Enter event location" />
+               </children>
+            </VBox>
+            <VBox layoutX="444.0" layoutY="155.0" prefHeight="187.0" prefWidth="249.0">
+               <children>
+                  <Label prefHeight="21.0" prefWidth="252.0" text="Enter Event Description:">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="2.0" />
+                     </VBox.margin>
+                  </Label>
+                  <TextField fx:id="eventDescription" prefHeight="88.0" prefWidth="249.0" promptText="Enter event description">
+                     <VBox.margin>
+                        <Insets bottom="20.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <Label prefHeight="21.0" prefWidth="252.0" text="Enter Number of Tickets:">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="numberOfTickets" onKeyPressed="#keyPressed" promptText="Enter a number" />
+               </children>
+            </VBox>
+            <Button fx:id="Add" layoutX="453.0" layoutY="362.0" mnemonicParsing="false" onAction="#addEvent" prefHeight="45.0" prefWidth="227.0" style="-fx-background-color: #000000;" text="Add" textFill="WHITE">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Button>
+            <Label fx:id="verification" alignment="TOP_CENTER" layoutX="258.0" layoutY="86.0" prefHeight="18.0" prefWidth="276.0" style="-fx-text-fill: black;" textAlignment="CENTER" textFill="#ff1201">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            </children>
+        </AnchorPane>
+    </center>
+</BorderPane>

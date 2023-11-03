@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="760.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ticketmanaging.AdminDashboardController">
+   <center>
+      <AnchorPane prefHeight="387.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox layoutX="102.0" layoutY="79.0" prefHeight="309.0" prefWidth="166.0">
+               <children>
+                  <Button fx:id="AddNewCategory" mnemonicParsing="false" onAction="#SendToAddNewCategory" prefHeight="40.0" prefWidth="181.0" style="-fx-background-color: #000000;" text="Add Category" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="60.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#SendToRemoveCategory" prefHeight="40.0" prefWidth="181.0" style="-fx-background-color: #000000;" text="Remove Category" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="60.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#SentToEditCategory" prefHeight="40.0" prefWidth="181.0" style="-fx-background-color: #000000;" text="Edit Category" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+            <VBox layoutX="492.0" layoutY="73.0" prefHeight="245.0" prefWidth="166.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#SendToAddEvent" prefHeight="40.0" prefWidth="181.0" style="-fx-background-color: #000000;" text="Add event" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="60.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#SendToRemoveEvent" prefHeight="40.0" prefWidth="181.0" style="-fx-background-color: #000000;" text="Remove Event" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="60.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#SendToEditEvent" prefHeight="40.0" prefWidth="181.0" style="-fx-background-color: #000000;" text="Edit Event" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+            <Label layoutX="102.0" layoutY="33.0" prefHeight="46.0" prefWidth="214.0" text="Choose an option:">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Label>
+            <Button fx:id="SignOut" layoutX="345.0" layoutY="384.0" mnemonicParsing="false" onAction="#signOut" style="-fx-background-color: #000000;" text="Sign out" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Line endX="605.0" endY="-14.0" layoutX="143.0" layoutY="14.0" startX="-132.0" startY="-14.0" style="-fx-stroke-width: 3;" />
+         </children>
+      </AnchorPane>
+   </center>
+   <top>
+      <AnchorPane prefHeight="23.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="318.0" layoutY="5.0" prefHeight="26.0" prefWidth="123.0" style="-fx-text-fill: black;" text="Event Planner" textFill="#020000">
+               <font>
+                  <Font name="System Bold Italic" size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </top>
+</BorderPane>

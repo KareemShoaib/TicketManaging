@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="760.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ticketmanaging.EmployeeDashboardController">
+   <center>
+      <AnchorPane prefHeight="387.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox layoutX="30.0" layoutY="81.0" prefHeight="336.0" prefWidth="275.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#RegisterClient" prefHeight="40.0" prefWidth="289.0" style="-fx-background-color: #000000;" text="Register Client" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="60.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="Retrieve" mnemonicParsing="false" onAction="#RetrieveData" prefHeight="39.0" prefWidth="286.0" style="-fx-background-color: #000000;" text="Retrieve Data About a Client" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="60.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="Book" mnemonicParsing="false" onAction="#BookTicket" prefHeight="40.0" prefWidth="277.0" style="-fx-background-color: #000000;" text="Book Ticket" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="60.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="Unbook" mnemonicParsing="false" onAction="#UnbookTicket" prefHeight="39.0" prefWidth="289.0" style="-fx-background-color: #000000;" text="Unbook Ticket" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+            <VBox layoutX="465.0" layoutY="81.0" prefHeight="336.0" prefWidth="275.0">
+               <children>
+                  <Button fx:id="RemoveCat" mnemonicParsing="false" onAction="#RemoveClient" prefHeight="39.0" prefWidth="287.0" style="-fx-background-color: #000000;" text="Remove Client" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="60.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="Search" mnemonicParsing="false" onAction="#SearchEvent" prefHeight="40.0" prefWidth="279.0" style="-fx-background-color: #000000;" text="Search Event" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="60.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="View" mnemonicParsing="false" onAction="#ViewEventDetails" prefHeight="40.0" prefWidth="278.0" style="-fx-background-color: #000000;" text="View Event Details" textFill="WHITE">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="60.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="Retrieve" mnemonicParsing="false" onAction="#RetrieveEvents" prefHeight="39.0" prefWidth="275.0" style="-fx-background-color: #000000;" text="Retrieve Events Under Category" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+            <Label layoutX="30.0" layoutY="35.0" prefHeight="46.0" prefWidth="214.0" text="Choose an option:">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Label>
+            <Button fx:id="SignOut" layoutX="351.0" layoutY="403.0" mnemonicParsing="false" onAction="#signOut" style="-fx-background-color: #000000;" text="Sign out" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Line endX="605.0" endY="-14.0" layoutX="143.0" layoutY="14.0" startX="-132.0" startY="-14.0" style="-fx-stroke-width: 3;" />
+         </children>
+      </AnchorPane>
+   </center>
+   <top>
+      <AnchorPane prefHeight="23.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="TOP_CENTER" layoutX="328.0" layoutY="4.0" prefHeight="26.0" prefWidth="104.0" style="-fx-text-fill: black;" text="Employee" textFill="#020000">
+               <font>
+                  <Font name="System Bold Italic" size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </top>
+</BorderPane>

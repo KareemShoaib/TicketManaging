@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="760.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ticketmanaging.EmployeeController">
+   <center>
+      <AnchorPane BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="Login" layoutX="130.0" layoutY="258.0" mnemonicParsing="false" onAction="#addEmployee" prefHeight="49.0" prefWidth="498.0" style="-fx-background-color: #000000;" text="Register" textFill="WHITE">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Button>
+            <Label layoutX="59.0" layoutY="102.0" prefHeight="46.0" prefWidth="90.0" text="Username:">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label alignment="TOP_CENTER" layoutX="263.0" layoutY="33.0" prefHeight="32.0" prefWidth="233.0" text="EMPLOYEE REGISTER" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold Italic" size="22.0" />
+               </font>
+            </Label>
+            <Label layoutX="59.0" layoutY="178.0" prefHeight="46.0" prefWidth="90.0" text="Password:">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="username" layoutX="166.0" layoutY="112.0" prefHeight="27.0" prefWidth="427.0" promptText="Username" />
+            <PasswordField fx:id="password" layoutX="166.0" layoutY="188.0" prefHeight="26.0" prefWidth="426.0" promptText="Password" />
+            <Button fx:id="Cancel" layoutX="127.0" layoutY="323.0" mnemonicParsing="false" onAction="#SendBackToM" prefHeight="50.0" prefWidth="503.0" style="-fx-background-color: #000000;" text="Cancel" textFill="WHITE">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Button>
+            <Label fx:id="Error" alignment="TOP_CENTER" layoutX="160.0" layoutY="77.0" prefHeight="18.0" prefWidth="276.0" textAlignment="CENTER" textFill="#ff1201">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Button fx:id="Login1" layoutX="128.0" layoutY="382.0" mnemonicParsing="false" onAction="#SendToLoginnn" prefHeight="50.0" prefWidth="503.0" style="-fx-background-color: #000000;" text="Login Page" textFill="WHITE">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
